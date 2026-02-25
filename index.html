@@ -3,46 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Santa Fe Allstar Painting LLC</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white p-6">
+        <h1 class="text-3xl font-bold text-center">Welcome to Santa Fe Allstar Painting LLC</h1>
+        <p class="text-center mt-2">Call Us: <strong>505-603-0754</strong></p>
     </header>
-
-    <section id="hero">
-        <h1>Welcome to Our Service</h1>
-        <p>Contact us at 505-603-0754 for more information!</p>
-    </section>
-
-    <section id="services">
-        <h2>Our Services</h2>
-        <p>We offer a variety of services to help you with your needs. Please call 505-603-0754 to learn more!</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-        <p>Don't hesitate to reach out at 505-603-0754!</p>
-    </section>
-
-    <footer>
-        <p>© 2026 Sfallstar LLC. All Rights Reserved. Call us at 505-603-0754!</p>
+    <main class="container mx-auto p-6">
+        <section class="mb-6">
+            <h2 class="text-2xl font-semibold mb-4">Our Services</h2>
+            <ul class="list-disc list-inside bg-white p-4 rounded shadow">
+                <li>Residential Painting</li>
+                <li>Commercial Painting</li>
+                <li>Interior Painting</li>
+                <li>Exterior Painting</li>
+                <li>Custom Finishes</li>
+            </ul>
+        </section>
+        <section>
+            <h2 class="text-2xl font-semibold mb-4">Contact Us</h2>
+            <form class="bg-white p-4 rounded shadow">
+                <div class="mb-4">
+                    <label class="block text-gray-700" for="name">Name:</label>
+                    <input type="text" id="name" name="name" class="border rounded w-full py-2 px-3" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700" for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="border rounded w-full py-2 px-3" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700" for="message">Message:</label>
+                    <textarea id="message" name="message" class="border rounded w-full py-2 px-3" required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-600 text-white rounded py-2 px-4">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer class="bg-blue-600 text-white text-center p-4 mt-6">
+        <p>&copy; 2026 Santa Fe Allstar Painting LLC - All rights reserved.</p>
     </footer>
 </body>
 </html>
